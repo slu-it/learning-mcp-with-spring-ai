@@ -52,7 +52,7 @@ class SecurityConfiguration {
                 .protectedResourceMetadata {
                     it.protectedResourceMetadataCustomizer {
                         it.resource("http://localhost:8080/mcp")
-                        it.authorizationServer("http://localhost:8081/realms/master")
+                        it.authorizationServer("http://localhost:9000/realms/master")
                         it.scope("mcp:tools")
                         it.scope("offline_access")
                     }
